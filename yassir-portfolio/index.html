@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio de Yassir Cherqui, développeur Full Stack Java / Angular.">
+<title>Yassir Cherqui — Développeur Full Stack Java / Angular</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/marquee.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="stylesheet" href="css/skills.css">
+<link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/projects.css">
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">YC.</a>
+  <nav>
+    <a href="#apropos">À propos</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#projets">Projets</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a>
+    <button id="theme" type="button" aria-label="Changer le thème">Thème</button>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <p class="hello">Bonjour, je suis</p>
+    <h1 aria-label="Yassir Cherqui"><span class="w"><span>Yassir</span></span><span class="w"><span>Cherqui</span></span></h1>
+    <div class="role"><span id="typed"></span><span class="caret"></span></div>
+    <p class="lead">Étudiant en 2<sup>e</sup> année à YouCode (UM6P). Je conçois des applications web complètes avec Java, Angular, Laravel et Vue.js, et j'aime les API REST, les bases de données et l'architecture backend.</p>
+    <div class="btns"><a class="btn main" href="#projets">Voir mes projets</a><a class="btn" href="#contact">Me contacter</a></div>
+  </div>
+  <div class="stage" id="stage">
+    <div class="ring" id="ring" aria-hidden="true"></div>
+    <div class="photo" id="photo"><img src="assets/img/yassir.jpg" alt="Portrait de Yassir Cherqui"></div>
+  </div>
+</div>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="track"></div></div>
+
+<div class="wrap">
+<section id="apropos">
+  <h2 class="rv">À propos</h2>
+  <div class="about">
+    <div class="tilt rv" id="tilt"><img src="assets/img/gallery/sout.jpg" alt="Yassir Cherqui en costume"></div>
+    <div class="rv" style="--d:.1s">
+      <p>Je développe des applications web de la conception à la mise en ligne. Pendant mon stage chez DataExpress, j'ai participé à la conception fonctionnelle et technique d'une application métier de gestion des employés, avec API REST, notifications en temps réel et chatbot IA.</p>
+      <p>Je cherche aujourd'hui à approfondir l'écosystème Java et Angular, tout en gardant une base solide en Laravel et Vue.js.</p>
+      <div class="mini">
+        <div><small>Formation</small><strong>YouCode, UM6P</strong></div>
+        <div><small>Langues</small><strong>Arabe, français B1, anglais A2</strong></div>
+        <div><small>Qualités</small><strong>Autonomie, collaboration, adaptabilité</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="competences">
+  <h2 class="rv">Compétences</h2>
+  <div class="skills" id="skills"></div>
+</section>
+
+<section id="Certificates">
+  <h2 class="rv">certificates</h2>
+  <div class="skills" id="certificates"></div>
+</section>
+
+
+<section id="parcours">
+  <h2 class="rv">Parcours</h2>
+  <div class="cols">
+    <div>
+      <ol class="tl rv" id="tlExp"><li>
+        <span class="when">Mai – Juil. 2026 · El Jadida</span>
+        <h3>Développeur Full Stack, stage</h3>
+        <p>DataExpress</p>
+        <ul>
+          <li>Conception fonctionnelle et technique d'une application de gestion des employés, services, projets et offres d'emploi.</li>
+          <li>Backend Laravel et API REST, front Vue.js avec Tailwind CSS.</li>
+          <li>Notifications en temps réel avec WebSocket et chatbot IA pour assister les utilisateurs.</li>
+          <li>Authentification, rôles, absences et évaluations. Suivi des tâches avec Jira en Agile/Scrum.</li>
+        </ul>
+      </li></ol>
+    </div>
+    <ol class="tl rv" id="tlEdu" style="--d:.1s">
+      <li><span class="when">2025 · en cours</span><h3>Développement Web Full-Stack</h3><p>UM6P | YouCode, Campus Youssoufia, 2<sup>e</sup> année</p></li>
+      <li><span class="when">2024 · 2025</span><h3>Licence en Gestion</h3><p>Faculté Ibn Zohr, Ait Melloul</p></li>
+      <li><span class="when">2022 · 2024</span><h3>DEUG en Économie et Gestion</h3><p>Faculté Ibn Zohr, Ait Melloul</p></li>
+      <li><span class="when">2020 · 2021</span><h3>Baccalauréat sciences de la vie et de la terre</h3><p>Lycée Hassan II, Ouled Teima</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="projets">
+  <h2 class="rv">Projets</h2>
+  <div class="projects" id="projects"></div>
+</section>
+
+<section id="galerie">
+  <h2 class="rv">Galerie</h2>
+  <p class="gal-intro rv">Photos et souvenirs de mon parcours, classés par catégorie.</p>
+  <div class="filters rv" id="galleryFilters" role="group" aria-label="Catégories de la galerie"></div>
+  <div class="gallery" id="galleryGrid"></div>
+</section>
+
+
+<section id="contact" style="padding-top:2rem">
+  <div class="contact rv">
+    <div>
+      <h2>Travaillons ensemble</h2>
+      <p>Une offre de stage, un projet ou une question ? Écrivez-moi, je réponds rapidement.</p>
+      <div class="links">
+        <a href="mailto:yassircherqui.YC@gmail.com"><span>yassircherqui.YC@gmail.com</span><small>Email</small></a>
+        <a href="tel:+212645019812"><span>+212 645 019 812</span><small>Téléphone</small></a>
+        <a href="https://github.com/Yassir04-ch" target="_blank" rel="noopener"><span>Yassir04-ch</span><small>GitHub</small></a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Yassir%20CHERQUI" target="_blank" rel="noopener"><span>Yassir CHERQUI</span><small>LinkedIn</small></a>
+      </div>
+    </div>
+    <form id="form">
+      <input id="fn" name="name" placeholder="Votre nom" required aria-label="Votre nom">
+      <input id="fe" name="from" type="email" placeholder="Votre email" required aria-label="Votre email">
+      <textarea id="fm" name="message" placeholder="Votre message" required aria-label="Votre message"></textarea>
+      <button type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+</div>
+</main>
+
+<dialog id="lightbox" aria-label="Aperçu de l'image">
+  <div id="lbStage"></div>
+  <div id="lbCaption"></div>
+  <button class="lb-btn" id="lbPrev" type="button" aria-label="Image précédente">&#8249;</button>
+  <button class="lb-btn" id="lbNext" type="button" aria-label="Image suivante">&#8250;</button>
+  <button class="lb-btn" id="lbClose" type="button" aria-label="Fermer">&times;</button>
+</dialog>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

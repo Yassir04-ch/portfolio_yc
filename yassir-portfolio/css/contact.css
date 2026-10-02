@@ -1,0 +1,15 @@
+/* contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:2rem;padding:clamp(2rem,6vw,4.5rem);display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+.contact h2{margin-bottom:1rem}
+.contact p{opacity:.8;margin:0 0 1.5rem}
+.links{display:grid;gap:.7rem}
+.links a{display:flex;justify-content:space-between;gap:1rem;padding:.9rem 1.1rem;border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);border-radius:1rem;text-decoration:none;transition:background .25s,transform .25s}
+.links a:hover{background:var(--blue);border-color:var(--blue);color:#fff;transform:translateX(6px)}
+.links small{opacity:.7}
+form{display:grid;gap:.8rem}
+input,textarea{font:inherit;width:100%;padding:.9rem 1rem;border-radius:1rem;border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);background:transparent;color:inherit}
+input::placeholder,textarea::placeholder{color:inherit;opacity:.55}
+textarea{min-height:8rem;resize:vertical}
+form button{padding:.95rem;border-radius:99px;border:0;background:var(--sand);color:#10151f;font:700 1rem Manrope,sans-serif;cursor:pointer;transition:transform .25s}
+form button:hover{transform:translateY(-3px)}

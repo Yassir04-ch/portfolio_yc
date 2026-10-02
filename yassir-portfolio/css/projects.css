@@ -1,0 +1,16 @@
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:1.5rem}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:1.6rem;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s ease-out,box-shadow .3s}
+.proj:hover{box-shadow:0 30px 60px -30px var(--blue)}
+.shot{height:11rem;background:linear-gradient(135deg,var(--c1),var(--c2));position:relative;overflow:hidden;display:grid;place-items:center}
+.shot img{width:100%;height:100%;object-fit:cover}
+.mock{width:78%;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:.8rem;padding:.7rem;backdrop-filter:blur(6px);transition:transform .5s cubic-bezier(.2,.9,.2,1)}
+.proj:hover .mock{transform:translateY(-8px) scale(1.04)}
+.mock i{display:block;height:.55rem;border-radius:99px;background:rgba(255,255,255,.55);margin:.45rem 0;width:var(--w)}
+.mock .dots{display:flex;gap:.3rem}
+.mock .dots u{width:.5rem;height:.5rem;border-radius:50%;background:rgba(255,255,255,.7)}
+.body{padding:1.5rem;display:flex;flex-direction:column;gap:.9rem;flex:1}
+.body h3{font-size:1.4rem}
+.body p{margin:0;color:var(--muted);font-size:.98rem}
+.body .chips{margin-top:auto}
+.body a{font-weight:700;color:var(--blue);text-decoration:none}

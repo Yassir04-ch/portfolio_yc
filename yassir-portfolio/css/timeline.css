@@ -1,0 +1,14 @@
+/* timeline */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+.tl{position:relative;padding-left:2rem;margin:0;list-style:none}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl::after{content:"";position:absolute;left:5px;top:6px;width:2px;height:var(--fill,0%);background:var(--blue);transition:height .2s linear}
+.tl li{position:relative;padding-bottom:2rem}
+.tl li::before{content:"";position:absolute;left:-2rem;top:.45rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--blue)}
+.tl h3{font-size:1.25rem;margin-bottom:.2rem}
+.tl .when{color:var(--blue);font-weight:700;font-size:.95rem}
+.tl ul{margin:.7rem 0 0;padding-left:1.1rem;color:var(--muted)}
+.tl ul li{padding:0 0 .35rem}
+.tl ul li::before{display:none}
+.tl p{margin:.2rem 0 0;color:var(--muted)}

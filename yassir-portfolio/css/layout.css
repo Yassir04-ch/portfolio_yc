@@ -1,0 +1,11 @@
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:4rem}
+.logo{font:800 1.3rem Syne,sans-serif;text-decoration:none}
+nav{display:flex;gap:1.4rem;align-items:center}
+nav a{text-decoration:none;font-weight:500;color:var(--muted);transition:color .2s}
+nav a:hover{color:var(--blue)}
+#theme{background:var(--surface);border:1px solid var(--line);color:var(--ink);border-radius:99px;padding:.35rem .9rem;font:inherit;cursor:pointer}
+@media(max-width:760px){nav a{display:none}}
+
+footer{padding:2rem 0 3rem;color:var(--muted);text-align:center}

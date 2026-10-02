@@ -1,0 +1,6 @@
+/* marquee */
+.marquee{border-block:1px solid var(--line);overflow:hidden;padding:1.1rem 0;background:var(--surface)}
+.track{display:flex;gap:3rem;width:max-content;animation:slide 38s linear infinite;font:800 1.6rem Syne,sans-serif;color:var(--muted)}
+.track span::after{content:"";display:inline-block;width:.5rem;height:.5rem;margin-left:3rem;background:var(--blue);border-radius:50%}
+.marquee:hover .track{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
