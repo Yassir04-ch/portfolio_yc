@@ -60,9 +60,7 @@ export const gallery = [
   { title: "Veille", category: "Stage", src: "assets/img/gallery/veille.jpg", ratio: "16/9" },
   { title: "Veille", category: "Stage", src: "assets/img/gallery/veille2.jpg", ratio: "16/9" },
   { title: "Veille", category: "Stage", src: "assets/img/gallery/veille4.jpg", ratio: "16/9" },
-  { title: "Souvenir de promotion", category: "Souvenirs", src: "assets/img/gallery/retro.jpg", ratio: "2/3" },
   { title: "Souvenir de promotion", category: "Souvenirs", src: "assets/img/gallery/sout.jpg", ratio: "4/3" },
-  { title: "Événement", category: "Événements", src: "assets/img/gallery/gala.jpg", ratio: "4/3" },
   { title: "Événement", category: "Événements", src: "assets/img/gallery/wahid.jpg", ratio: "4/3" },
   { title: "Événement", category: "Événements", src: "assets/img/gallery/wahidimg.jpg", ratio: "4/3" },
 ];
